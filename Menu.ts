@@ -7,12 +7,19 @@ export function main() {
     let opcao: number;
 
     // Objeto da Classe Conta (Teste)
-    const conta: Conta = new Conta(1, 123, 1, "Adriana", 10000);
+    const conta: Conta = new Conta(1, 123, 1, "Jesus", 10000);
     conta.visualizar();
     conta.sacar(10500);
     conta.visualizar();
     conta.depositar(5000);
     conta.visualizar();
+
+    const conta2: Conta = new Conta(2, 321, 2, "Lucifer", 666);
+    conta2.visualizar();
+    conta2.sacar(10500);
+    conta2.visualizar();
+    conta2.depositar(5000);
+    conta2.visualizar();
 
     while (true) {
 
