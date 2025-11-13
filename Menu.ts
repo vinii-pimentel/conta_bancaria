@@ -85,7 +85,7 @@ export function main() {
                     case 2:
                         console.log(`Digite o Dia de Aniversario da COnta Poupanca: `);
                         aniversario = readlinesync.questionInt("")
-                        contas.cadastrar(new ContaCorrente(contas.gerarNumero(), agencia, tipo, titular, saldo, aniversario));
+                        contas.cadastrar(new ContaPoupanca(contas.gerarNumero(), agencia, tipo, titular, saldo, aniversario));
                         break;
                 }
 
